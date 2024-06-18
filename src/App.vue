@@ -1,26 +1,27 @@
 
 <template>
-  <h1 class="text-3xl font-bold underline">
-    Hola Mundo!!
+ 
     <!--mis componentes-->
-    <div id="boton">
-      <Boton/>
+  <Ejercicio/>
 
-    </div>
-  </h1>
+
+ 
 
 </template>
-  <script setup>
-  import Boton from "@/components/Boton.vue";
+  <script >
+  import Ejercicio from "./components/Ejercicio.vue"
+
   export default {
-    name: "Boton",
-    components: {
-      Boton
+    name: "App",
+    components: {Ejercicio},
+    data(){
+      return {
+
+      }
     }
-  };
-  
+  }
   </script>
 
-<style scoped>
+<style>
 
 </style>
